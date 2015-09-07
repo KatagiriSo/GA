@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gdp-E1-cAP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Ae2-sW-NJr">
+            <objects>
+                <tableViewController id="Gg9-7z-YY9" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aSK-b7-UAA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="p8v-wL-Bf4">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="08j-M1-om1" style="IBUITableViewCellStyleDefault" id="46K-U4-ZMX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="46K-U4-ZMX" id="CZz-62-4NR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="遺伝的アルゴリズム(Genetic Algorithms)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="08j-M1-om1">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="XhZ-eG-NRA" kind="show" id="6fj-A2-TTZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Gg9-7z-YY9" id="7hN-1O-kgW"/>
+                            <outlet property="delegate" destination="Gg9-7z-YY9" id="49z-Pa-5L4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pWS-CY-7vO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OY0-Ol-9tk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="740"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9iH-rK-ULB">
+            <objects>
+                <viewController id="XhZ-eG-NRA" customClass="ViewController" customModule="Algorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jut-DP-yRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="n21-mD-Dpq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1p-kL-kPp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-9t-IK0">
+                                <rect key="frame" x="16" y="64" width="568" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遺伝アルゴリズム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y5-Em-Jn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Y5-Em-Jn2" secondAttribute="trailing" id="8Ja-we-BP2"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Y5-Em-Jn2" secondAttribute="bottom" id="Bpo-ZS-YZi"/>
+                                    <constraint firstItem="1Y5-Em-Jn2" firstAttribute="top" secondItem="E2g-9t-IK0" secondAttribute="top" id="CRf-MQ-hn6"/>
+                                    <constraint firstItem="1Y5-Em-Jn2" firstAttribute="leading" secondItem="E2g-9t-IK0" secondAttribute="leading" id="OYR-OU-dm3"/>
+                                    <constraint firstAttribute="height" constant="100" id="weV-kc-esq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-fT-xVC">
+                                <rect key="frame" x="16" y="172" width="568" height="420"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="遺伝アルゴリズムは　です　" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-CG-Vaw">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="420"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zcW-CG-Vaw" secondAttribute="bottom" id="R2B-d7-uTm"/>
+                                    <constraint firstAttribute="trailing" secondItem="zcW-CG-Vaw" secondAttribute="trailing" id="Wva-Bp-Pht"/>
+                                    <constraint firstItem="zcW-CG-Vaw" firstAttribute="top" secondItem="eY3-fT-xVC" secondAttribute="top" id="iGr-4D-5xc"/>
+                                    <constraint firstItem="zcW-CG-Vaw" firstAttribute="leading" secondItem="eY3-fT-xVC" secondAttribute="leading" id="wXU-9P-XBA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="E2g-9t-IK0" secondAttribute="trailing" id="4RV-e1-UfN"/>
+                            <constraint firstItem="eY3-fT-xVC" firstAttribute="trailing" secondItem="D1p-kL-kPp" secondAttribute="trailingMargin" id="6fd-TG-3Y6"/>
+                            <constraint firstItem="eY3-fT-xVC" firstAttribute="top" secondItem="E2g-9t-IK0" secondAttribute="bottom" constant="8" id="CMZ-G1-fq1"/>
+                            <constraint firstItem="E2g-9t-IK0" firstAttribute="leading" secondItem="D1p-kL-kPp" secondAttribute="leadingMargin" id="a7R-c4-6lv"/>
+                            <constraint firstItem="n21-mD-Dpq" firstAttribute="top" secondItem="eY3-fT-xVC" secondAttribute="bottom" constant="8" id="aJe-uV-MiY"/>
+                            <constraint firstItem="eY3-fT-xVC" firstAttribute="leading" secondItem="D1p-kL-kPp" secondAttribute="leadingMargin" id="aUT-TX-azj"/>
+                            <constraint firstItem="E2g-9t-IK0" firstAttribute="top" secondItem="jut-DP-yRp" secondAttribute="bottom" id="mFr-k1-K5s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxa-uC-uPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="678"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y7x-P1-QwY">
+            <objects>
+                <viewController id="Z2Z-GJ-MUW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JMp-AO-3mk"/>
+                        <viewControllerLayoutGuide type="bottom" id="QA0-au-YrL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMI-tS-mEm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bey-cf-rxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="1284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V4A-N0-uaE">
+            <objects>
+                <navigationController id="gdp-E1-cAP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Xl-fi-OBY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gg9-7z-YY9" kind="relationship" relationship="rootViewController" id="rih-tQ-vK9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDl-8F-Oqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="592"/>
+        </scene>
+    </scenes>
+</document>
