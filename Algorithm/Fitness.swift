@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Fitness {
+    var maxFitness: Double = 0.0
+    var minFitness: Double = 0.0
+    var avgFitness: Double = 0.0
+    init()
+    {
+        
+    }
+}
