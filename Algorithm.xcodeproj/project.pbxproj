@@ -13,6 +13,8 @@
 		3220983D1B8C271600BE19DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3220983C1B8C271600BE19DD /* Images.xcassets */; };
 		322098401B8C271600BE19DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3220983E1B8C271600BE19DD /* LaunchScreen.xib */; };
 		3220984C1B8C271600BE19DD /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220984B1B8C271600BE19DD /* AlgorithmTests.swift */; };
+		323CD7E71B9EB87C00E123AD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CD7E61B9EB87C00E123AD /* TableViewController.swift */; };
+		323CD7E91B9EBC7200E123AD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CD7E81B9EBC7200E123AD /* TableViewCell.swift */; };
 		32436E771B9554AF0015117F /* GA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32436E761B9554AF0015117F /* GA.swift */; };
 		32A091741B9837A400491D48 /* GenerationTransitionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A091731B9837A400491D48 /* GenerationTransitionInfo.swift */; };
 		32DF712E1B96DC5E006D7358 /* BitStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF712D1B96DC5E006D7358 /* BitStringMaker.swift */; };
@@ -42,6 +44,8 @@
 		322098451B8C271600BE19DD /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3220984A1B8C271600BE19DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3220984B1B8C271600BE19DD /* AlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmTests.swift; sourceTree = "<group>"; };
+		323CD7E61B9EB87C00E123AD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		323CD7E81B9EBC7200E123AD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		32436E761B9554AF0015117F /* GA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GA.swift; sourceTree = "<group>"; };
 		32A091731B9837A400491D48 /* GenerationTransitionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerationTransitionInfo.swift; sourceTree = "<group>"; };
 		32DF712D1B96DC5E006D7358 /* BitStringMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitStringMaker.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				32DF712F1B96DC6D006D7358 /* GA */,
 				322098351B8C271600BE19DD /* AppDelegate.swift */,
 				322098371B8C271600BE19DD /* ViewController.swift */,
+				323CD7E61B9EB87C00E123AD /* TableViewController.swift */,
+				323CD7E81B9EBC7200E123AD /* TableViewCell.swift */,
 				322098391B8C271600BE19DD /* Main.storyboard */,
 				3220983C1B8C271600BE19DD /* Images.xcassets */,
 				3220983E1B8C271600BE19DD /* LaunchScreen.xib */,
@@ -243,8 +249,10 @@
 				32DF712E1B96DC5E006D7358 /* BitStringMaker.swift in Sources */,
 				32DF71351B96DD00006D7358 /* Population.swift in Sources */,
 				32A091741B9837A400491D48 /* GenerationTransitionInfo.swift in Sources */,
+				323CD7E91B9EBC7200E123AD /* TableViewCell.swift in Sources */,
 				322098361B8C271600BE19DD /* AppDelegate.swift in Sources */,
 				32436E771B9554AF0015117F /* GA.swift in Sources */,
+				323CD7E71B9EB87C00E123AD /* TableViewController.swift in Sources */,
 				32DF71311B96DCD0006D7358 /* Individual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
