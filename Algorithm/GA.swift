@@ -12,7 +12,7 @@ class GA {
     
     let poputation = Population(populationSize: 10, codeLength: 10, codeMax: 1, min:-5.12, max:+5.12)
     let generationTransitionInfo = GenerationTransitionInfo(gap: 0.6, eliteRate: 0.7, mutate: 0.4, cross:0.7)
-    let generation = 20 //計算する世代数
+    let generation = 2000 //計算する世代数
     
     init ()
     {
@@ -25,7 +25,7 @@ class GA {
         
         for i in 0...generation-1
         {
-            println("第\(i)世代")
+            print("第\(i)世代")
             
             // 適合度計算
             poputation.calcFitness()

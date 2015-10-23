@@ -21,6 +21,9 @@
 		32DF71311B96DCD0006D7358 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF71301B96DCD0006D7358 /* Individual.swift */; };
 		32DF71331B96DCE5006D7358 /* Fitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF71321B96DCE5006D7358 /* Fitness.swift */; };
 		32DF71351B96DD00006D7358 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF71341B96DD00006D7358 /* Population.swift */; };
+		60EC7C2A1BDA096E00195DB7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC7C291BDA096E00195DB7 /* Roulette.swift */; };
+		60EC7C2C1BDA149600195DB7 /* Mutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC7C2B1BDA149600195DB7 /* Mutation.swift */; };
+		60EC7C2E1BDA1A2B00195DB7 /* CrossOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC7C2D1BDA1A2B00195DB7 /* CrossOver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		32DF71301B96DCD0006D7358 /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
 		32DF71321B96DCE5006D7358 /* Fitness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fitness.swift; sourceTree = "<group>"; };
 		32DF71341B96DD00006D7358 /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		60EC7C291BDA096E00195DB7 /* Roulette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roulette.swift; sourceTree = "<group>"; };
+		60EC7C2B1BDA149600195DB7 /* Mutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mutation.swift; path = ../Mutation.swift; sourceTree = "<group>"; };
+		60EC7C2D1BDA1A2B00195DB7 /* CrossOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossOver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +142,10 @@
 			children = (
 				32436E761B9554AF0015117F /* GA.swift */,
 				32A091731B9837A400491D48 /* GenerationTransitionInfo.swift */,
+				60EC7C2B1BDA149600195DB7 /* Mutation.swift */,
+				60EC7C2D1BDA1A2B00195DB7 /* CrossOver.swift */,
 				32DF71341B96DD00006D7358 /* Population.swift */,
+				60EC7C291BDA096E00195DB7 /* Roulette.swift */,
 				32DF71321B96DCE5006D7358 /* Fitness.swift */,
 				32DF71301B96DCD0006D7358 /* Individual.swift */,
 				32DF712D1B96DC5E006D7358 /* BitStringMaker.swift */,
@@ -188,6 +197,8 @@
 		322098281B8C271600BE19DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = SoKatagiri;
 				TargetAttributes = {
@@ -250,9 +261,12 @@
 				32DF71351B96DD00006D7358 /* Population.swift in Sources */,
 				32A091741B9837A400491D48 /* GenerationTransitionInfo.swift in Sources */,
 				323CD7E91B9EBC7200E123AD /* TableViewCell.swift in Sources */,
+				60EC7C2A1BDA096E00195DB7 /* Roulette.swift in Sources */,
 				322098361B8C271600BE19DD /* AppDelegate.swift in Sources */,
 				32436E771B9554AF0015117F /* GA.swift in Sources */,
 				323CD7E71B9EB87C00E123AD /* TableViewController.swift in Sources */,
+				60EC7C2E1BDA1A2B00195DB7 /* CrossOver.swift in Sources */,
+				60EC7C2C1BDA149600195DB7 /* Mutation.swift in Sources */,
 				32DF71311B96DCD0006D7358 /* Individual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

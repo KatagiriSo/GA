@@ -29,9 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        var b = BitStringMaker(codeLength: 3, min: 1, max: 5)
-        var l = b.encode(4)
-        var ga = GA()
+        let b = BitStringMaker(codeLength: 3, min: 1, max: 5)
+        _ = b.encode(4)
+        let ga = GA()
         ga.main()
     }
 
